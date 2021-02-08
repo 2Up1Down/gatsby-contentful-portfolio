@@ -6,10 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "Digital Project Management",
+    description:
+      "Need assistance with your next web project? Contact me, I would be glad to be of help.",
+    author: "@Wendelin Steiner",
+    twitterUsername: "@wendelinsteiner",
     image: "/twitter-img.png",
     siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
   },
@@ -33,7 +34,7 @@ module.exports = {
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`jobs`],
+        contentTypes: [`jobs`, `projects`],
         singleTypes: [],
       },
     },
