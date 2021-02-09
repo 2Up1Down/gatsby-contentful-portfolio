@@ -1,21 +1,18 @@
-import React, { useState } from "react"
+import React from "react"
+import { FaTimes } from "react-icons/fa"
+
 import Links from "../constants/links"
 import SocialLinks from "../constants/socialLinks"
-import { FaTimes } from "react-icons/fa"
-const Sidebar = () => {
-  const [sidebarVisibility, setSidebarVisibility] = useState(true)
 
+const Sidebar = ({ isVisible, toggleSidebar }) => {
   return (
-    <aside className={`sidebar ${sidebarVisibility ? "show-sidebar" : ""}`}>
-      <button
-        className="close-btn"
-        onClick={() => setSidebarVisibility(!sidebarVisibility)}
-      >
+    <aside className={`sidebar ${isVisible ? "show-sidebar" : ""}`}>
+      <button className="close-btn" onClick={toggleSidebar}>
         <FaTimes />
       </button>
       <div className="side-container">
-        <Links styleClass="sidebar-links" />
-        <SocialLinks styleClass="sidebar-icons" />
+        <Links styleClass={`${isVisible ? "sidebar-links" : ""}`} />
+        <SocialLinks styleClass={`${isVisible ? "sidebar-icons" : ""}`} />
       </div>
     </aside>
   )
