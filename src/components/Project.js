@@ -3,23 +3,18 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({ index, ...rest }) => {
-  const {
-    description,
-    github,
-    image: {
-      childImageSharp: { fluid: img },
-    },
-    stack,
-    strapiId,
-    title,
-    url,
-  } = rest
+  const { description, github, image, stack, strapiId, title, url } = rest
 
   const tempStack = stack.map(item => <span key={item.id}>{item.name}</span>)
 
   return (
     <article className="project">
-      <Image fluid={img} className="project-img"></Image>
+      {image && (
+        <Image
+          fluid={image.childImageSharp.fluid}
+          className="project-img"
+        ></Image>
+      )}
       <div className="project-info">
         <p className="project-number">
           {(index + 1).toString().padStart(2, "0")}.
