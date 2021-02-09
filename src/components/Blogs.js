@@ -11,7 +11,7 @@ export const Blogs = ({ blogs, showLink, title }) => {
         <Title title={title} />
         <div className="blogs-center">{tempBlogs}</div>
         {showLink && (
-          <Link className="btn center-btn" to="/blog/">
+          <Link className="btn center-btn" to="/blog">
             Blog
           </Link>
         )}

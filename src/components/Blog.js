@@ -15,7 +15,7 @@ const Blog = ({ ...blog }) => {
   } = blog
 
   return (
-    <Link to={`/blogs/${slug}`}>
+    <Link to={`/blog/${slug}`}>
       <article className="blog">
         <Image className="blog-img" fluid={image} />
         <div className="blog-card">
