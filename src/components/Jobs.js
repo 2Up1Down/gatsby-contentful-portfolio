@@ -61,7 +61,9 @@ const Jobs = () => {
           <ul>{descTemp}</ul>
         </article>
       </div>
-      <Link className="btn center-btn">more info</Link>
+      <Link className="btn center-btn" to="/about">
+        more info
+      </Link>
     </section>
   )
 }
