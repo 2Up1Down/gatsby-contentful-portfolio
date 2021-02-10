@@ -6,10 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Digital Project Management Services",
+    title: "Digital Project Management",
     description: "Need assistance with your next web project? At your service!",
     author: "Wendelin Steiner",
     twitterUsername: "@wendelinsteiner",
+    // TODO: replace image with personal image
     image: "/twitter-img.png",
     siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
   },
