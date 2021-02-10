@@ -15,7 +15,7 @@ export default ({ data }) => {
   } = data
 
   return (
-    <Layout>
+    <Layout title="Digital Project Management by Wendelin Steiner">
       <Hero />
       <Services />
       <Jobs />
