@@ -12,7 +12,7 @@ module.exports = {
     twitterUsername: "@wendelinsteiner",
     // TODO: replace image with personal image
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://testing-strapi-portfolio.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
