@@ -1,13 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
 import { FaTimes } from "react-icons/fa"
 
 import Links from "../constants/links"
 import SocialLinks from "../constants/socialLinks"
+import SidebarContext from "./../context/sidebarContext"
 
-const Sidebar = ({ isVisible, toggleSidebar }) => {
+const Sidebar = () => {
+  const { isVisible, setIsVisible } = useContext(SidebarContext)
+
   return (
     <aside className={`sidebar ${isVisible ? "show-sidebar" : ""}`}>
-      <button className="close-btn" onClick={toggleSidebar}>
+      <button className="close-btn" onClick={() => setIsVisible(false)}>
         <FaTimes />
       </button>
       <div className="side-container">

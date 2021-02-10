@@ -3,23 +3,21 @@ import React, { useState } from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+
 import { useDocumentTitle } from "./../hooks/useDocumentTitle"
+import SidebarContext from "./../context/sidebarContext"
 
 const Layout = ({ children, title }) => {
-  const [isVisible, setIsVisible] = useState(false)
   useDocumentTitle(title || "Digital Project Management")
-
-  const toggleSidebar = () => {
-    setIsVisible(!isVisible)
-  }
+  const [isVisible, setIsVisible] = useState(false)
 
   return (
-    <>
-      <Navbar toggleSidebar={toggleSidebar} />
-      <Sidebar isVisible={isVisible} toggleSidebar={toggleSidebar} />
+    <SidebarContext.Provider value={{ isVisible, setIsVisible }}>
+      <Navbar />
+      <Sidebar />
       {children}
       <Footer />
-    </>
+    </SidebarContext.Provider>
   )
 }
 
