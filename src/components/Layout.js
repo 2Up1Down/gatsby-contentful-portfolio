@@ -4,11 +4,9 @@ import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
 
-import { useDocumentTitle } from "./../hooks/useDocumentTitle"
 import SidebarContext from "./../context/sidebarContext"
 
-const Layout = ({ children, title }) => {
-  useDocumentTitle(title || "Digital Project Management")
+const Layout = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false)
 
   return (
