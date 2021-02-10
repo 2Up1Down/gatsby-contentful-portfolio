@@ -1,15 +1,18 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
+import { graphql, Link } from "gatsby"
+
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const blogTemplate = ({ data }) => {
   const {
-    blog: { category, content, date, title },
+    blog: { category, content, date, description, title },
   } = data
 
   return (
     <Layout>
+      <SEO title={title} description={description} />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
@@ -40,6 +43,7 @@ export const query = graphql`
       category
       content
       date
+      description
       id
       slug
       title

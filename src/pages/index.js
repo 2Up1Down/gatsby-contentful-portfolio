@@ -17,7 +17,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Digital Project Management Services" />
+      <SEO title="steiner" description="this is our description" />
       <Hero />
       <Services />
       <Jobs />

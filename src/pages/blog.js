@@ -1,8 +1,9 @@
 import React from "react"
+
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
-// ...GatsbyImageSharpFluid
+import SEO from "../components/SEO"
 
 const Blog = ({ data }) => {
   const {
@@ -11,6 +12,7 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Blog" description="" />
       <section className="blog-page">
         <Blogs blogs={blogs} title="Blog" />
       </section>

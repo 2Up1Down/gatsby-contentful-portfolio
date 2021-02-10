@@ -1,8 +1,9 @@
 import React from "react"
-import Layout from "../components/Layout"
 import { graphql } from "gatsby"
+
+import Layout from "../components/Layout"
 import Projects from "../components/Projects"
-// ...GatsbyImageSharpFluid
+import SEO from "../components/SEO"
 
 const ProjectsPage = ({ data }) => {
   const {
@@ -11,6 +12,7 @@ const ProjectsPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Projects" description="" />
       <Projects projects={projects} title="All Projects" />
     </Layout>
   )
