@@ -4,12 +4,10 @@ import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 
 const blogTemplate = ({ data }) => {
-  console.log(data)
   const {
     blog: { category, content, date, title },
   } = data
 
-  console.log(content)
   return (
     <Layout>
       <section className="blog-template">

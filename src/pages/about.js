@@ -11,7 +11,6 @@ const About = ({ data }) => {
     about: { description, image, stack, title },
   } = data
 
-  console.log(description)
   return (
     <Layout>
       <section className="about-page">
