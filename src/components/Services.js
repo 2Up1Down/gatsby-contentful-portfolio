@@ -1,17 +1,48 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Title from "./Title"
-import services from "../constants/services"
+import FaIcon from "./FaIcon"
+import Subtitle from "./Subtitle"
+
+const query = graphql`
+  {
+    contentfulSectionService {
+      title
+      subtitle
+      services {
+        title
+        iconName
+        description {
+          description
+        }
+        id
+        keywords
+      }
+    }
+  }
+`
 
 const Services = () => {
+  const data = useStaticQuery(query)
+  const {
+    contentfulSectionService: { title, subtitle, services },
+  } = data
+
   const tempServices = services.map(service => {
-    const { id, icon, title, text } = service
+    const {
+      id,
+      iconName,
+      title,
+      description: { description },
+      keywords,
+    } = service
     return (
       <article className="service" key={id}>
-        {icon}
+        <FaIcon iconName={iconName} className="service-icon" />
         <h3>{title}</h3>
         <div className="underline"></div>
-        <p>{text}</p>
+        <p>{description}</p>
       </article>
     )
   })
@@ -19,8 +50,8 @@ const Services = () => {
   return (
     <section className="section bg-grey">
       <div className="section-center">
-        <Title title="Services"></Title>
-
+        <Title title={title} />
+        <Subtitle subtitle={subtitle} />
         <div className="services-center">{tempServices}</div>
       </div>
     </section>
