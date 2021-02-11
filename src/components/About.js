@@ -49,9 +49,6 @@ const About = () => {
       },
     },
   } = data
-  console.log(data)
-  console.log(image)
-  console.log(subtitle)
 
   return (
     <section className="about-page">
@@ -59,6 +56,7 @@ const About = () => {
         <article className="about-text">
           <Title title={title} />
           {subtitle && <Subtitle subtitle={subtitle} />}
+
           <p>{name}</p>
           <p>{jobTitle}</p>
           <Image fluid={image.fluid} className="about-img" />
