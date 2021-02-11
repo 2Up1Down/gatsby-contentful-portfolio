@@ -8,6 +8,7 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import About from "../components/About"
 
 export default ({ data }) => {
   const {
@@ -19,6 +20,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="steiner" description="this is our description" />
       <Hero />
+      <About />
       <Services />
       <Jobs />
       <Projects projects={projects} title="Featured Projects" showLink />
