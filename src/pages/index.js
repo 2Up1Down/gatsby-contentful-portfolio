@@ -9,6 +9,7 @@ import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
 import About from "../components/About"
+import Contact from "../components/Contact"
 
 export default ({ data }) => {
   const {
@@ -25,6 +26,7 @@ export default ({ data }) => {
       <Jobs />
       <Projects showLink />
       <Blogs blogs={blogs} title="Recent blog posts" showLink />
+      <Contact />
     </Layout>
   )
 }
