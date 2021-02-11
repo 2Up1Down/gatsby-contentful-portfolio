@@ -35,6 +35,7 @@ const Services = () => {
       iconName,
       title,
       description: { description },
+      // TODO: Implement keywords at a later stage
       keywords,
     } = service
     return (
