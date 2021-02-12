@@ -18,7 +18,7 @@ const query = graphql`
         }
         logo {
           fluid {
-            src
+            ...GatsbyContentfulFluid
           }
         }
         url
@@ -33,10 +33,11 @@ const Partners = () => {
     sectionPartner: { title, subtitle, partners },
   } = data
   return (
-    <section className="section partners">
+    <section className="section section-center partners">
       <Title title={title} />
       {subtitle && <Subtitle subtitle={subtitle} />}
-      <div className="section-center">
+
+      <div className="partners-center">
         {partners.map(partner => (
           <Partner partner={partner} />
         ))}
