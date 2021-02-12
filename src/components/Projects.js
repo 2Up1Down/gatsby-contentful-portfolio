@@ -35,7 +35,7 @@ const Projects = ({ showLink }) => {
   } = data
 
   return (
-    <section className="section projects">
+    <section className="section projects" id="projects">
       <Title title={title} />
       <Subtitle subtitle={subtitle} />
 

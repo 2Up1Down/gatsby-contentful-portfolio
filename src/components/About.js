@@ -51,7 +51,7 @@ const About = () => {
   } = data
 
   return (
-    <section className="about-page">
+    <section className="about-page" id="about">
       <div className="section-center about-center">
         <article className="about-text">
           <Title title={title} />

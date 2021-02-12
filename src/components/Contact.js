@@ -2,7 +2,7 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section className="contact-page">
+    <section className="contact-page" id="contact">
       <article className="contact-form">
         <h3>get in touch</h3>
         <form action="https://formspree.io/f/xjvpzqzz" method="POST">

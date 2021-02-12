@@ -48,7 +48,7 @@ const Services = () => {
   })
 
   return (
-    <section className="section bg-grey">
+    <section className="section bg-grey" id="services">
       <div className="section-center">
         <Title title={title} />
         <Subtitle subtitle={subtitle} />
