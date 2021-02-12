@@ -36,7 +36,6 @@ const Services = () => {
       title,
       description: { description },
       // TODO: Implement keywords at a later stage
-      keywords,
     } = service
     return (
       <article className="service" key={id}>
