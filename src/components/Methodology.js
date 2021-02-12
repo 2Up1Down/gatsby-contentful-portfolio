@@ -14,7 +14,7 @@ const query = graphql`
         id
         image {
           fluid {
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
         title
