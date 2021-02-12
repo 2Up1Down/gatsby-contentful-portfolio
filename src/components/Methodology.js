@@ -33,10 +33,10 @@ const Methodology = () => {
   } = data
 
   return (
-    <section className="section methodology">
+    <section className="section section-center methodology">
       <Title title={title} />
       {subtitle && <Subtitle subtitle={subtitle} />}
-      <div className="section-center cards-center">
+      <div className="methodology-center">
         {cards.map(card => (
           <Card key={card.id} card={card} />
         ))}
