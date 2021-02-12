@@ -4,12 +4,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Services from "../components/Services"
-import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
 import About from "../components/About"
 import Contact from "../components/Contact"
+import Methodology from "../components/Methodology"
+import Partners from "./../components/Partners"
 
 export default ({ data }) => {
   const {
@@ -23,8 +24,9 @@ export default ({ data }) => {
       <Hero />
       <About />
       <Services />
-      <Jobs />
       <Projects showLink />
+      <Methodology />
+      <Partners />
       <Blogs blogs={blogs} title="Recent blog posts" showLink />
       <Contact />
     </Layout>
