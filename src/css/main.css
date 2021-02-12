@@ -754,7 +754,7 @@ Methodology
 .methodology {
 }
 
-.cards-center {
+.methodology-center {
 }
 
 /*
@@ -782,15 +782,15 @@ Card
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     column-gap: 2rem;
   }
-  .blog-img {
+  .card-img {
     height: 17.5rem;
   }
 }
-/* @media screen and (min-width: 850px) {
-  .blog-img {
+@media screen and (min-width: 850px) {
+  .card-img {
     height: 13.75rem;
   }
-} */
+}
 
 /*
 =============== 
@@ -863,6 +863,29 @@ Blog
 @media screen and (min-width: 850px) {
   .blog-img {
     height: 13.75rem;
+  }
+}
+
+/*
+===============
+Partner
+===============
+*/
+
+.partners {
+}
+
+.partners-center {
+}
+
+@media screen and (min-width: 576px) {
+  .partners-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+    column-gap: 2rem;
+  }
+  .partner-img {
+    height: 17.5rem;
   }
 }
 
