@@ -1,16 +1,18 @@
 import React from "react"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+
 import SocialLinks from "../constants/socialLinks"
-// ...GatsbyImageSharpFluid
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
-      childImageSharp {
+    sectionHero: contentfulSectionHero {
+      title
+      subtitle
+      image {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyContentfulFluid
         }
       }
     }
@@ -20,9 +22,7 @@ const query = graphql`
 const Hero = () => {
   const data = useStaticQuery(query)
   const {
-    file: {
-      childImageSharp: { fluid },
-    },
+    sectionHero: { title, subtitle, image },
   } = data
 
   return (
@@ -30,14 +30,15 @@ const Hero = () => {
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>I'm John</h1>
-          <h4>Freelance Web and Mobile UI/IX Designer</h4>
-          <Link className="btn" to="/contact">
-            Contact me
-          </Link>
+          {/* TODO: change order of h1 and h4 for SEO reasons */}
+          <h1>{title}</h1>
+          <h4>{subtitle}</h4>
+          <AnchorLink className="btn" to="/#contact">
+            Get in touch
+          </AnchorLink>
           <SocialLinks />
         </article>
-        <Image fluid={fluid} className="hero-img" />
+        <Image fluid={image.fluid} className="hero-img" />
       </div>
     </header>
   )
