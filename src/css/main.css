@@ -430,9 +430,22 @@ Hero
 .hero-img {
   display: none;
 }
-.hero-info h4 {
+
+/* .hero-info h4 {
   color: var(--clr-grey-5);
+} */
+
+.hero-pretitle {
+  font-size: 3rem;
+  text-transform: none;
 }
+
+.hero-title {
+  font-size: 0.875rem;
+  color: var(--clr-grey-5);
+  text-transform: none;
+}
+
 .hero-icons {
   justify-items: flex-start;
 }
@@ -454,9 +467,10 @@ Hero
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .hero h4 {
+  .hero-title {
     font-size: 0.85rem;
   }
+
   .hero-info {
     grid-row: 1/1;
     grid-column: 1 / span 8;
@@ -468,16 +482,13 @@ Hero
   }
 }
 @media screen and (min-width: 1170px) {
-  .hero h4 {
+  .hero-title {
     font-size: 1rem;
+    line-height: 1;
   }
 
   .hero-info {
     grid-column: 1 / span 8;
-  }
-
-  .hero h4 {
-    line-height: 1;
   }
 }
 

@@ -30,9 +30,8 @@ const Hero = () => {
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="underline"></div>
-          {/* TODO: change order of h1 and h4 for SEO reasons */}
-          <h1>{title}</h1>
-          <h4>{subtitle}</h4>
+          <h4 className="hero-pretitle">{subtitle}</h4>
+          <h1 className="hero-title">{title}</h1>
           <AnchorLink className="btn" to="/#contact">
             Get in touch
           </AnchorLink>
