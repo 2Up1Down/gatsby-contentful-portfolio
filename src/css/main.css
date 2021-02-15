@@ -770,6 +770,31 @@ Methodology
 
 /*
 =============== 
+Citation
+===============
+*/
+.citation {
+  padding: 5rem 0;
+  background-color: var(--clr-grey-1);
+  color: var(--clr-white);
+  display: grid;
+  place-items: center;
+}
+
+.citation-quote {
+  color: var(--clr-red-dark);
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.citation-author {
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+/*
+=============== 
 Card
 ===============
 */

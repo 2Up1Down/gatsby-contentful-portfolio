@@ -39,7 +39,7 @@ module.exports = {
           google: [
             {
               family: "Roboto",
-              variants: ["400", "700"],
+              variants: ["400", "500", "700"],
             },
             { family: "Open Sans" },
           ],

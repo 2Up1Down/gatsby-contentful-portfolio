@@ -9,6 +9,7 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import Methodology from "../components/Methodology"
 import Partners from "./../components/Partners"
+import Citation from "../components/Citation"
 
 export default () => {
   return (
@@ -17,6 +18,7 @@ export default () => {
       <Hero />
       <Services />
       <Projects showLink />
+      <Citation />
       <About />
       <Methodology />
       <Partners />
