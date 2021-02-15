@@ -8,11 +8,6 @@ const data = [
     url: "/",
   },
   {
-    id: 2,
-    text: "about",
-    url: "/#about",
-  },
-  {
     id: 3,
     text: "services",
     url: "/#services",
@@ -21,6 +16,11 @@ const data = [
     id: 4,
     text: "projects",
     url: "/#projects",
+  },
+  {
+    id: 2,
+    text: "about",
+    url: "/#about",
   },
   {
     id: 5,

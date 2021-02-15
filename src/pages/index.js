@@ -15,9 +15,9 @@ export default () => {
     <Layout>
       <SEO title="steiner" description="this is our description" />
       <Hero />
-      <About />
       <Services />
       <Projects showLink />
+      <About />
       <Methodology />
       <Partners />
       <Contact />
