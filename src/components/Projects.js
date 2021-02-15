@@ -3,7 +3,6 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 
 import Title from "./Title"
 import Project from "./Project"
-import Subtitle from "./Subtitle"
 
 const query = graphql`
   {
@@ -37,7 +36,6 @@ const Projects = ({ showLink }) => {
   return (
     <section className="section projects" id="projects">
       <Title title={title} />
-      <Subtitle subtitle={subtitle} />
 
       <div className="section-center projects-center">
         {projects.map((project, index) => (

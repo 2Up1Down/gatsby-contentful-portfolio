@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Title from "./Title"
-import Subtitle from "./Subtitle"
 import Partner from "./Partner"
 
 const query = graphql`
@@ -32,10 +31,10 @@ const Partners = () => {
   const {
     sectionPartner: { title, subtitle, partners },
   } = data
+
   return (
     <section className="section section-center partners">
-      <Title title={title} />
-      {subtitle && <Subtitle subtitle={subtitle} />}
+      <Title title={title} subtitle={subtitle} />
 
       <div className="partners-center">
         {partners.map(partner => (

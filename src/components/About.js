@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown"
 
 import Title from "./Title"
 import FaIcon from "./FaIcon"
-import Subtitle from "./Subtitle"
 
 const query = graphql`
   {
@@ -54,8 +53,7 @@ const About = () => {
     <section className="about-page" id="about">
       <div className="section-center about-center">
         <article className="about-text">
-          <Title title={title} />
-          {subtitle && <Subtitle subtitle={subtitle} />}
+          <Title title={title} subtitle={subtitle} />
 
           <p>{name}</p>
           <p>{jobTitle}</p>

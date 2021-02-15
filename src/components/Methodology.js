@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Title from "./Title"
-import Subtitle from "./Subtitle"
 import Card from "./Card"
 
 const query = graphql`
@@ -34,8 +33,8 @@ const Methodology = () => {
 
   return (
     <section className="section section-center methodology">
-      <Title title={title} />
-      {subtitle && <Subtitle subtitle={subtitle} />}
+      <Title title={title} subtitle={subtitle} />
+
       <div className="methodology-center">
         {cards.map(card => (
           <Card key={card.id} card={card} />

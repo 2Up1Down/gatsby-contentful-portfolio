@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Title from "./Title"
 import FaIcon from "./FaIcon"
-import Subtitle from "./Subtitle"
 
 const query = graphql`
   {
@@ -50,8 +49,7 @@ const Services = () => {
   return (
     <section className="section bg-grey" id="services">
       <div className="section-center">
-        <Title title={title} />
-        <Subtitle subtitle={subtitle} />
+        <Title title={title} subtitle={subtitle} />
         <div className="services-center">{tempServices}</div>
       </div>
     </section>

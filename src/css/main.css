@@ -182,6 +182,14 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
+
+.title {
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
 .bg-grey {
   background: var(--clr-grey-10);
 }
