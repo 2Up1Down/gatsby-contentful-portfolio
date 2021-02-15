@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="underline"></div>
           <h4 className="hero-pretitle">{subtitle}</h4>
           <h1 className="hero-title">{title}</h1>
-          <AnchorLink className="btn" to="/#contact">
+          <AnchorLink className="btn btn-hero" to="/#contact">
             Get in touch
           </AnchorLink>
           <SocialLinks />
