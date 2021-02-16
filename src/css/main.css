@@ -583,7 +583,7 @@ Services
   transition: var(--transition);
 }
 
-.service-icon {
+.service .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   display: inline-block;
@@ -594,6 +594,7 @@ Services
   height: 0.12rem;
 }
 
+.service,
 .service p,
 .service h3,
 .service .underline {
