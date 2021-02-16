@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { FaTimes } from "react-icons/fa"
 
 import Links from "../constants/links"
-import SocialLinks from "../constants/socialLinks"
+import SocialLinks from "./SocialLinks"
 import SidebarContext from "./../context/sidebarContext"
 
 const Sidebar = () => {

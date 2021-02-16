@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown"
 
 import Title from "./Title"
 import FaIcon from "./FaIcon"
+import SocialLinks from "./SocialLinks"
 
 const query = graphql`
   {
@@ -59,14 +60,7 @@ const About = () => {
           <p>{jobTitle}</p>
           <Image fluid={image.fluid} className="about-img" />
           <ReactMarkdown children={description} />
-          <div className="about-stack">
-            {social.map(item => (
-              <span key={item.id}>
-                <FaIcon iconName={item.icon} className="" />
-                {item.label}
-              </span>
-            ))}
-          </div>
+          <SocialLinks styleIcon="about-icon" />
         </article>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-import SocialLinks from "../constants/socialLinks"
+import SocialLinks from "./SocialLinks"
 
 const query = graphql`
   {
