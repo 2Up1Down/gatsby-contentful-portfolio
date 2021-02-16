@@ -38,7 +38,7 @@ const Partners = () => {
 
       <div className="partners-center">
         {partners.map(partner => (
-          <Partner partner={partner} />
+          <Partner key={partner.id} partner={partner} />
         ))}
       </div>
     </section>

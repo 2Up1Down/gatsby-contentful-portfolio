@@ -61,10 +61,10 @@ const About = () => {
           <ReactMarkdown children={description} />
           <div className="about-stack">
             {social.map(item => (
-              <div className="">
-                <FaIcon iconName={item.icon} key={item.id} />
+              <span key={item.id}>
+                <FaIcon iconName={item.icon} className="" />
                 {item.label}
-              </div>
+              </span>
             ))}
           </div>
         </article>
