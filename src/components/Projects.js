@@ -30,12 +30,12 @@ const query = graphql`
 const Projects = ({ showLink }) => {
   const data = useStaticQuery(query)
   const {
-    sectionProjects: { title, subtitle, projects },
+    sectionProjects: { title, subtitle = "", projects },
   } = data
 
   return (
     <section className="section projects" id="projects">
-      <Title title={title} />
+      <Title title={title} subtitle={subtitle} />
 
       <div className="section-center projects-center">
         {projects.map((project, index) => (
@@ -43,11 +43,11 @@ const Projects = ({ showLink }) => {
         ))}
       </div>
 
-      {showLink && (
+      {/* {showLink && (
         <Link to="/projects" className="btn center-btn">
           Projects
         </Link>
-      )}
+      )} */}
     </section>
   )
 }
