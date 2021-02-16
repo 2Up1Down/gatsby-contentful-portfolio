@@ -9,7 +9,7 @@ const Card = ({ card }) => {
     body: { body },
     title,
   } = card
-  console.log(card)
+
   return (
     <article className="card">
       <Image fluid={image.fluid} className="card-img"></Image>

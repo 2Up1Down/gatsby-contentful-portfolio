@@ -3,7 +3,7 @@ import Image from "gatsby-image"
 
 const Partner = ({ partner }) => {
   const { description, logo, name, url } = partner
-  console.log(partner)
+
   return (
     <a href={url}>
       <div className="partner">
