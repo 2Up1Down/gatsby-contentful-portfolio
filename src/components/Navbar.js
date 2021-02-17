@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" class="nav-logo" />
           <button
             type="button"
             className="toggle-btn"
