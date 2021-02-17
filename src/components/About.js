@@ -4,9 +4,10 @@ import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 
 import Title from "./Title"
-import FaIcon from "./FaIcon"
 import SocialLinks from "./SocialLinks"
 
+// ...GatsbyContentfulFluid_withWebp
+// ...GatsbyContentfulFluid
 const query = graphql`
   {
     about: contentfulSectionAbout {
@@ -20,7 +21,7 @@ const query = graphql`
         }
         image {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         social {
@@ -45,7 +46,6 @@ const About = () => {
         jobTitle,
         description: { description },
         image,
-        social,
       },
     },
   } = data

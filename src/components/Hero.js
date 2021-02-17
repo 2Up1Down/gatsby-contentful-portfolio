@@ -5,6 +5,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import SocialLinks from "./SocialLinks"
 
+// ...GatsbyContentfulFluid
+// ...GatsbyContentfulFluid_withWebp
 const query = graphql`
   {
     sectionHero: contentfulSectionHero {
@@ -12,7 +14,7 @@ const query = graphql`
       subtitle
       image {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
       }
     }
