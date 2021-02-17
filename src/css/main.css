@@ -895,11 +895,16 @@ Citation
   place-items: center;
 }
 
+.citation-center {
+  text-align: center;
+}
+
 .citation-quote {
   color: var(--clr-primary);
   font-weight: 500;
   font-size: 3rem;
   margin-bottom: 2rem;
+  display: inline-block;
 }
 
 .citation-author {
