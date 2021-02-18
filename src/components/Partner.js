@@ -5,19 +5,20 @@ const Partner = ({ partner }) => {
   const { description, logo, name, url } = partner
 
   return (
-    <a href={url}>
-      <div className="partner">
+    <div className="partner">
+      <a href={url} target="_blank">
         <Image fluid={logo.fluid} className="partner-img" />
-        <div className="partner-text">
-          <h4 className="partner-title">{name}</h4>
-          {description && (
-            <p className="partner-partner-description">
-              {description.description}
-            </p>
-          )}
+
+        <div className="partner-overlay">
+          <div className="partner-description">
+            <h4 className="partner-title">{name}</h4>
+            {description && (
+              <p className="partner-info">{description.description}</p>
+            )}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
 

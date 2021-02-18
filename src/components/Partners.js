@@ -34,7 +34,7 @@ const Partners = () => {
 
   return (
     <section className="section section-center partners">
-      <Title title={title} subtitle={subtitle} />
+      <Title title={title} />
 
       <div className="partners-center">
         {partners.map(partner => (
