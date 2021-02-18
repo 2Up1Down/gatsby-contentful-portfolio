@@ -15,7 +15,10 @@ const Sidebar = () => {
       </button>
       <div className="side-container">
         <Links styleClass={`${isVisible ? "sidebar-links" : ""}`} />
-        <SocialLinks styleClass={`${isVisible ? "sidebar-icons" : ""}`} />
+        <SocialLinks
+          styleList={`${isVisible ? "sidebar-icons" : ""}`}
+          styleIcon="sidebar-style-icons"
+        />
       </div>
     </aside>
   )
