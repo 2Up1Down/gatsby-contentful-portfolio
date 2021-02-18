@@ -12,11 +12,15 @@ const Card = ({ card }) => {
 
   return (
     <article className="card">
-      <Image fluid={image.fluid} className="card-img"></Image>
-      <div className="card-text">
-        <h4 className="card-title">{title}</h4>
-        {subtitle && <h5 className="card-subtitle">{subtitle}</h5>}
-        <ReactMarkdown children={body} />
+      <div className="card-container">
+        <div className="card-img-container">
+          <Image fluid={image.fluid} className="card-img"></Image>
+        </div>
+        <div className="card-text">
+          <h4 className="card-title">{title}</h4>
+          {subtitle && <h5 className="card-subtitle">{subtitle}</h5>}
+          <ReactMarkdown children={body} />
+        </div>
       </div>
     </article>
   )

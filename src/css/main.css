@@ -920,7 +920,45 @@ Methodology
 .methodology {
 }
 
-.methodology-center {
+.methodology .card {
+  box-shadow: var(--dark-shadow);
+  margin: 2rem 0;
+}
+
+.methodology .card-container {
+  padding: 1rem;
+}
+
+.methodology .card-img-container {
+  height: 12rem;
+  max-height: 12rem;
+  margin-bottom: 0.5rem;
+}
+
+.methodology .card-img {
+  /* width: auto; */
+  height: 12rem;
+  width: 10rem;
+  margin: 0 auto;
+  /* max-height: 12rem; */
+}
+
+@media screen and (min-width: 576px) {
+  .methodology-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .methodology .card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .methodology .card {
+    flex: 0 0 calc(33% - 1rem);
+  }
 }
 
 /*
@@ -928,7 +966,7 @@ Methodology
 Card
 ===============
 */
-.card {
+/* .card {
   display: block;
   padding: 1.5rem 1rem;
 }
@@ -956,7 +994,7 @@ Card
   .card-img {
     height: 13.75rem;
   }
-}
+} */
 
 /*
 =============== 
