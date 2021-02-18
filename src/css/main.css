@@ -789,29 +789,32 @@ Projects
   opacity: 0.5;
   transition: var(--transition);
 }
-.project:hover .project-img::after {
+
+.project-img:hover::after {
   opacity: 0;
 }
+
 .project-info {
   background: var(--clr-white);
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
 .project-number {
   display: inline-block;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   color: var(--clr-primary);
-  margin-bottom: 0.75rem;
+  /* margin-bottom: 0.75rem; */
 }
 .project-info h3 {
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 .project-desc {
   word-spacing: 15px;
   color: var(--clr-black);
+  margin-bottom: 0.5rem;
 }
 .project-stack {
   margin-bottom: 1rem;
@@ -855,6 +858,11 @@ Projects
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
+
+  .project-info {
+    padding: 1.5rem 2rem;
+  }
+
   .project-img {
     grid-column: 1 / span 8;
     /* grid-column-end: 8; */

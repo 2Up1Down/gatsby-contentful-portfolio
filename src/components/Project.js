@@ -16,12 +16,14 @@ const Project = ({ index, ...project }) => {
 
   return (
     <article className="project">
-      {image && <Image fluid={image.fluid} className="project-img"></Image>}
+      {image && <Image fluid={image.fluid} className="project-img" />}
       <div className="project-info">
-        <p className="project-number">
-          {(index + 1).toString().padStart(2, "0")}.
-        </p>
-        <h3>{title}</h3>
+        <h3>
+          <span className="project-number">
+            {(index + 1).toString().padStart(2, "0")}.
+          </span>{" "}
+          {title}
+        </h3>
         <ReactMarkdown children={description} className="project-desc" />
         <div className="project-stack">{tempStack}</div>
         <div className="project-links">
