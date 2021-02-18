@@ -556,10 +556,11 @@ Hero
 }
 
 .btn-hero {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   background-color: var(--clr-secondary);
   border-radius: 0;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
   outline: 0rem solid var(--clr-secondary);
 }
 
