@@ -32,13 +32,15 @@ const Methodology = () => {
   } = data
 
   return (
-    <section className="section section-center methodology">
-      <Title title={title} subtitle={subtitle} />
+    <section className="section methodology bg-grey">
+      <div className="section-center">
+        <Title title={title} subtitle={subtitle} />
 
-      <div className="methodology-center">
-        {cards.map(card => (
-          <Card key={card.id} card={card} />
-        ))}
+        <div className="methodology-center">
+          {cards.map(card => (
+            <Card key={card.id} card={card} />
+          ))}
+        </div>
       </div>
     </section>
   )
