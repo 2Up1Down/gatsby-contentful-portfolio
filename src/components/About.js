@@ -40,10 +40,8 @@ const About = () => {
   const {
     about: {
       title,
-      subtitle,
       person: {
         name,
-        jobTitle,
         description: { description },
         image,
       },

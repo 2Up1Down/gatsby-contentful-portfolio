@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Title from "./Title"
 import Project from "./Project"

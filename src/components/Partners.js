@@ -29,7 +29,7 @@ const query = graphql`
 const Partners = () => {
   const data = useStaticQuery(query)
   const {
-    sectionPartner: { title, subtitle, partners },
+    sectionPartner: { title, partners },
   } = data
 
   return (
