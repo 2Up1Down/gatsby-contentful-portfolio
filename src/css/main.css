@@ -85,8 +85,8 @@ Variables
   --clr-primary-dark: #660708;
   --clr-primary-light: #e5383b;
 
-  --clr-secondary: #161a1d;
-  --clr-secondary-light: #2c343a;
+  --clr-secondary: hsl(206, 14%, 10%);
+  --clr-secondary-light: hsl(206, 34%, 28%);
 
   --clr-grey: #d3d3d3;
   --clr-grey-light: #f5f3f4;
@@ -971,38 +971,51 @@ Methodology
 
 /*
 =============== 
-Card
+About me
 ===============
 */
-/* .card {
-  display: block;
-  padding: 1.5rem 1rem;
+
+.about-description {
+  margin-top: 2rem;
 }
 
-.card-img {
-  height: 15rem;
+.about-name {
+  margin-bottom: 1rem;
 }
 
-.card-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+.about-list {
+  margin: 0 0.75rem 0 0;
+  margin: 0 auto;
+  padding-right: 0.75;
 }
 
-@media screen and (min-width: 576px) {
-  .cards-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    column-gap: 2rem;
+.about-icon {
+  color: var(--clr-secondary-light);
+}
+
+.about-icon:hover {
+  color: var(--clr-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  .card-img {
-    height: 17.5rem;
+
+  .about-img,
+  .about-description {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0 0.5rem;
+  }
+
+  .about-img {
+    /* object-fit: cover; */
+    align-self: stretch;
   }
 }
-@media screen and (min-width: 850px) {
-  .card-img {
-    height: 13.75rem;
-  }
-} */
 
 /*
 =============== 
@@ -1168,11 +1181,11 @@ Blog Page (currently not needed)
 } */
 /*
 ===============
-About Page 
+About Page (currently not used)
 ===============
 */
 
-.about-page {
+/* .about-page {
   padding: 7rem 0;
 }
 .about-img {
@@ -1222,7 +1235,7 @@ About Page
   .about-text {
     grid-column: 6 / -1;
   }
-}
+} */
 
 /*
 ===============

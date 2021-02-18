@@ -51,16 +51,16 @@ const About = () => {
   } = data
 
   return (
-    <section className="about-page" id="about">
+    <section className="section about-section" id="about">
       <div className="section-center about-center">
-        <article className="about-text">
-          <Title title={title} subtitle={subtitle} />
-
-          <p>{name}</p>
-          <p>{jobTitle}</p>
+        <Title title={title} />
+        <article className="about-content">
           <Image fluid={image.fluid} className="about-img" />
-          <ReactMarkdown children={description} />
-          <SocialLinks styleIcon="about-icon" />
+          <div className="about-description">
+            <h3 className="about-name">{name}</h3>
+            <ReactMarkdown children={description} />
+            <SocialLinks styleIcon="about-icon" styleList="about-list" />
+          </div>
         </article>
       </div>
     </section>
