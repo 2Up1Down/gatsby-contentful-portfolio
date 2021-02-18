@@ -31,15 +31,17 @@ const Hero = () => {
     <header className="hero">
       <div className="section-center hero-center">
         <article className="hero-info">
-          <div className="underline"></div>
           <h4 className="hero-pretitle">{subtitle}</h4>
+          <div className="underline"></div>
           <h1 className="hero-title">{title}</h1>
+          <SocialLinks styleList="hero-social" />
           <AnchorLink className="btn btn-hero" to="/#contact">
             Get in touch
           </AnchorLink>
-          <SocialLinks />
         </article>
-        <Image fluid={image.fluid} className="hero-img" />
+        <div className="hero-img-container">
+          <Image fluid={image.fluid} className="hero-img" />
+        </div>
       </div>
     </header>
   )
