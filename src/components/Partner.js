@@ -6,7 +6,7 @@ const Partner = ({ partner }) => {
 
   return (
     <div className="partner">
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noreferrer">
         <Image fluid={logo.fluid} className="partner-img" />
 
         <div className="partner-overlay">
