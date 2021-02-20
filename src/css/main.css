@@ -12,40 +12,6 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: hsl(
-    184,
-    91%,
-    17%
-  ); /* used for btn:hover, error page, project-icon:hover */
-  --clr-primary-2: hsl(185, 84%, 25%); /* toggle-button:hover */
-  --clr-primary-3: hsl(185, 81%, 29%); /* not used */
-  --clr-primary-4: hsl(184, 77%, 34%); /* not used */
-  --clr-primary-5: hsl(185, 62%, 45%); /* everywhere */
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(185, 57%, 50%); /* not used */
-  --clr-primary-7: hsl(184, 65%, 59%); /* not used */
-  --clr-primary-8: hsl(184, 80%, 74%); /* btn:hover */
-  --clr-primary-9: hsl(185, 94%, 87%); /* sidebar-links, service:hover */
-  --clr-primary-10: hsl(186, 100%, 94%); /* hero, hero-info, error page*/
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%); /* body (titles), social links, navbar*/
-  --clr-grey-3: hsl(209, 34%, 30%); /* body */
-  --clr-grey-4: hsl(209, 28%, 39%); /* not used */
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(
-    210,
-    22%,
-    49%
-  ); /* hero-title, sidebar, stack, job-info, contact form*/
-  --clr-grey-8: hsl(210, 31%, 80%); /* not used */
-  --clr-grey-9: hsl(212, 33%, 89%); /* job-info, blog, stack */
-  --clr-grey-10: hsl(210, 36%, 96%); /* background everywhere, sidebar */
-  --clr-green-dark: hsl(125, 67%, 35%); /* not used */
-  --clr-red-dark: hsl(360, 67%, 44%); /* closed button */
-  --clr-red-light: hsl(360, 71%, 66%); /* not used */
-  --clr-white: #fff; /* */
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -55,31 +21,6 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* blog:hover, contact form:hover, project-img, project-info */
   --max-width: 1170px;
   --fixed-width: 700px;
-
-  /* Wendelin*/
-  /* dark shades of primary color*/
-  /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: #284b63;
-  --clr-primary-2: #284b63;
-  --clr-primary-5: #284b63;
-
-  /* lighter shades of primary color */
-  --clr-primary-8: #3b6f91;
-  --clr-primary-9: #3b6f91;
-  --clr-primary-10: #3b6f91;
-
-  /* darkest grey - used for headings */
-  --clr-grey-1: #021e27; /* body (titles), social links, navbar*/
-  --clr-grey-3: #021e27; /* body */
-  --clr-grey-4: #021e27; /* not used */
-
-  /* grey used for paragraphs */
-  --clr-grey-5: #021e27; /* hero-title, sidebar, stack, job-info, contact form*/
-  --clr-grey-9: #021e27; /* job-info, blog, stack */
-  --clr-grey-10: #d9d9d9; /* background everywhere, sidebar */
-  --clr-green-dark: #3c6e71; /* not used */
-  --clr-red-dark: hsl(360, 67%, 44%); /* closed button */
-  --clr-red-light: hsl(360, 71%, 66%); /* not used */
 
   --clr-primary: #ba181b;
   --clr-primary-dark: #660708;
@@ -597,29 +538,7 @@ Hero
   .hero-pretitle {
     font-size: 3rem;
   }
-
-  .hero-img {
-    /* grid-area: image; */
-    /* display: block; */
-    /* grid-row: 2 / span 2;
-    grid-column: 2 / 2; */
-    /* object-fit: contain;
-    max-height: 60%;
-    max-width: 50%; */
-    /* align-self: flex-end; */
-  }
 }
-
-/* @media screen and (min-width: 1170px) {
-  .hero-title {
-    font-size: 1rem;
-    line-height: 1;
-  }
-
-  .hero-info {
-    grid-column: 1 / span 8;
-  }
-} */
 
 /*
 =============== 
