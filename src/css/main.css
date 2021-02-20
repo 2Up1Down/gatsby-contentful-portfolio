@@ -487,6 +487,7 @@ Hero
   font-size: 2rem;
   color: var(--clr-grey);
   text-transform: none;
+  font-family: var(--ff-secondary);
 }
 
 .hero-title {
