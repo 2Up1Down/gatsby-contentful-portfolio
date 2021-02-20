@@ -9,7 +9,7 @@ First personal project to combine different technologies and gain experience wit
 
 ## Deployed website:
 
-** following soon **
+https://steinerw.netlify.app/
 
 ### Credits
 
