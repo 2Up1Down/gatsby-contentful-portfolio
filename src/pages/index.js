@@ -14,7 +14,7 @@ import Citation from "../components/Citation"
 export default () => {
   return (
     <Layout>
-      <SEO title="steiner" description="this is our description" />
+      <SEO title="steiner" />
       <Hero />
       <Services />
       <Projects showLink />
