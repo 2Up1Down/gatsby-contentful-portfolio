@@ -14,10 +14,10 @@ import Citation from "../components/Citation"
 export default () => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="steiner" description="this is our description" />
       <Hero />
       <Services />
-      <Projects />
+      <Projects showLink />
       <Citation />
       <About />
       <Methodology />
