@@ -17,7 +17,7 @@ module.exports = {
     twitterUsername: "@wendelinsteiner",
     // TODO: replace image with personal image
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-portfolio.netlify.app",
+    siteUrl: "https://wendelin.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
