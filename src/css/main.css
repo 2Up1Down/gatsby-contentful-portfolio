@@ -185,7 +185,9 @@ p {
 }
 
 .subtitle {
-  margin-bottom: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 40rem;
 }
 
 .bg-grey {
