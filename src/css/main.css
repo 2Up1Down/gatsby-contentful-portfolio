@@ -755,9 +755,7 @@ Projects
 }
 .project-number {
   display: inline-block;
-  /* font-size: 1.25rem; */
   color: var(--clr-primary);
-  /* margin-bottom: 0.75rem; */
 }
 .project-info h3 {
   font-weight: 500;
@@ -906,6 +904,10 @@ Methodology
   display: grid;
   gap: 2.5rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 363px), 1fr));
+}
+
+.methodology .card-text {
+  white-space: pre-wrap;
 }
 
 /*
