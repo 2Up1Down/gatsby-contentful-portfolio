@@ -14,6 +14,7 @@ const query = graphql`
         title
         url
         stack
+        github
         image {
           fluid {
             ...GatsbyContentfulFluid

@@ -1,11 +1,12 @@
 import React from "react"
 import Image from "gatsby-image"
 import ReactMarkdown from "react-markdown"
-import { FaShareSquare } from "react-icons/fa"
+import { FaShareSquare, FaGithubSquare } from "react-icons/fa"
 
 const Project = ({ index, ...project }) => {
   const {
     description: { description },
+    github,
     image,
     stack,
     title,
@@ -30,6 +31,11 @@ const Project = ({ index, ...project }) => {
           <a href={url}>
             <FaShareSquare className="project-icon" />
           </a>
+          {github && (
+            <a href={github}>
+              <FaGithubSquare className="project-icon" />
+            </a>
+          )}
         </div>
       </div>
     </article>
